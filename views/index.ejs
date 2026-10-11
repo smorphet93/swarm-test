@@ -1,0 +1,15 @@
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="index" appConnect="local" -->
+<dmx-serverconnect id="request" url="/api/request"></dmx-serverconnect>
+<meta name="ac:route" content="/">
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <h1>Docker swarm test</h1>
+            <p>Server Name: <span dmx-text="request.data.servername"></span></p>
+            <p>Test env variable: <span dmx-text="request.data.variable"></span></p>
+        </div>
+    </div>
+</div>

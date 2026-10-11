@@ -1,0 +1,24 @@
+[
+  {
+    "name": "variable",
+    "module": "core",
+    "action": "setvalue",
+    "options": {
+      "value": "{{$_ENV.test_value}}"
+    },
+    "meta": [],
+    "output": true,
+    "outputType": "text"
+  },
+  {
+    "name": "servername",
+    "module": "core",
+    "action": "setvalue",
+    "options": {
+      "value": "{{$_SERVER.HOSTNAME}}"
+    },
+    "meta": [],
+    "outputType": "text",
+    "output": true
+  }
+]
