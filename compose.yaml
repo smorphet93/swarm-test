@@ -14,3 +14,13 @@ services:
       options:
         max-file: "5"
         max-size: "10m"
+configs:
+  wappler_global_config:
+    content: |
+      {
+        "debug": "${DEBUG}",
+        "secret": "${SECRET}",
+        "env": {
+          "test_value": "${test_value}"
+        }
+      }
