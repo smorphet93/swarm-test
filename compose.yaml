@@ -14,16 +14,7 @@ services:
       options:
         max-file: "5"
         max-size: "10m"
-    configs:
-      - source: wappler_global_config
-        target: /opt/node_app/app/config/config.json
-configs:
-  wappler_global_config:
-    content: |
-      {
-        "debug": "${DEBUG}",
-        "secret": "${SECRET}",
-        "env": {
-          "test_value": "${test_value}"
-        }
-      }
+    environment:
+      DEBUG: "false"
+      SECRET: "${SECRET}"
+      test_value: "${test_value}"
