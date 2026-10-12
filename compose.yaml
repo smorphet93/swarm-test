@@ -1,6 +1,6 @@
 services:
   web:
-    image: ghcr.io/smorphet93/swarm-test-web:0.0.1
+    image: ghcr.io/smorphet93/swarm-test-web:1.0.0
     ports:
       - "8100:3000"
     deploy:
