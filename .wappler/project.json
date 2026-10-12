@@ -37,9 +37,28 @@
       "NodeOS": "alpine",
       "NodeImageType": "slim",
       "webLoggingMaxFiles": "5",
-      "webLoggingMaxFileSize": "10m"
+      "webLoggingMaxFileSize": "10m",
+      "dockerTimezone": "Etc/UTC",
+      "databaseConnectionType": "none"
+    },
+    {
+      "name": "release",
+      "remoteURL": "http://178.62.122.157",
+      "webServerPort": 8100,
+      "webServerLang": "node",
+      "targetType": "docker",
+      "webServer": "node",
+      "NodeVersion": "lts",
+      "NodeOS": "alpine",
+      "NodeImageType": "slim",
+      "webLoggingMaxFiles": "5",
+      "webLoggingMaxFileSize": "10m",
+      "usage": "production",
+      "dockerTimezone": "Etc/UTC",
+      "databaseConnectionType": "none"
     }
   ],
   "activeTarget": "Development",
-  "projectType": "web"
+  "projectType": "web",
+  "extensions": []
 }
